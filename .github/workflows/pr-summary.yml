@@ -15,8 +15,9 @@ jobs:
         with:
           python-version: 3.10
 
-      - name: Install dependencies from file
-        run: pip install -r requirements.txt
+      - name: Install dependencies
+        run: pip install openai requests
+
 
       - name: Run summarizer script
         env:
